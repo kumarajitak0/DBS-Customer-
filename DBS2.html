@@ -9,6 +9,14 @@
   padding: 8px;
   font-family: Arial;
 }
+.center {
+    position: fixed;
+    left: 45%;
+    top: 25%;
+    margin: -(H/2)px -(W/2)px;
+    width: Wpx;
+    height: Hpx;
+}
 .button {
   background-color: #F44336;
   border: none;
@@ -23,10 +31,27 @@
 }
 .red {background-color: #f44336;} 
 </style>
+<script>
+function numberValidation() {
+var n = document.form.price.value;
+var q = document.form.quan.value;
+if (isNaN(n) && isNaN(q) {
+document.getElementById("price").innerHTML="Please enter Numeric value";
+document.getElementById("quan").innerHTML="Please enter Numeric value";
+return false;
+}
+else
+{
+document.getElementById("numberText").innerHTML="Numeric value is: " + n;
+document.getElementById("numberText").innerHTML="Numeric value is: " + q;
+return true;
+}
+}
+</script>
 </head>
 <body>
-<form>
-<table>
+<form id="formTest" method="get" action="processData">
+<table class="center">
 <tr>
 <td>
 <span class="label red">Search Stock</span><br><br>
@@ -61,7 +86,7 @@
 </tr>
 <tr>
 <td>
-<input type="button" value="Place Order" class="button"><br>
+<input type="submit" id="btnSubmit" value="Place Order" class="button"><br>
 </td>
 </tr>
 </table>
