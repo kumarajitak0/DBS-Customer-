@@ -2,48 +2,75 @@
 <html lang="en">
 <head>
 <title> Customer Front End </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.label {
+  color: white;
+  padding: 8px;
+  font-family: Arial;
+}
+.button {
+  background-color: #F44336;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.red {background-color: #f44336;} 
+</style>
 </head>
 <body>
 <form>
 <table>
 <tr>
 <td>
-<label for="stocks">Search Stock:</label>
-<select name="stocks" id="stocks">
+<span class="label red">Search Stock</span><br><br>
+<select name="stocks" id="stocks" style="width:175px;">
   <option value="dbs">DBS</option>
   <option value="wipro">Wipro</option>
   <option value="amzn">Amazon</option>
   <option value="apl">Apple</option>
-</select>
+</select><br><br>
 </td>
 </tr>
 <tr>
 <td>
-<label for="order">Order Type:</label>
-<select name="order" id="order">
+<span class="label red">Order Type</span><br><br>
+<select name="order" id="order" style="width:175px;">
     <option value="lim">Limit</option>
     <option value="mkt">Market</option>
-</select>
+</select><br><br>
 </td>
 </tr>
 <tr>
 <td>
-<label for="price">Price:</label>
-<input type="text" id="price" name="price">
+<span class="label red">Price</span><br>
+<input type="text" id="price" name="price" length="5"><br><br>
 </td>
 </tr>
 <tr>
 <td>
-<label for="quan">Quantity:</label>
-<input type="text" id="quan" name="quan">
+<span class="label red">Quantity</span><br>
+<input type="text" id="quan" name="quan" length="5"><br><br>
 </td>
 </tr>
 <tr>
 <td>
-<input type="button" value="Place Order">
+<input type="button" value="Place Order" class="button"><br>
 </td>
 </tr>
 </table>
 </form>
 </body>
 </html>
+
+
+
+
+
+
