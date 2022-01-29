@@ -1,0 +1,78 @@
+body {
+  background-image: url(customer.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  font-size: 50px;
+  color: darkorange;
+  text-shadow: 3px 3px cornflowerblue;
+}
+input[type="text"] {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type="number"] {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type="password"] {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type="email"] {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type="submit"] {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  background: crimson;
+  padding: 10px 20px;
+  color: whitesmoke;
+  font-size: 20px;
+}
+.container {
+  margin-top: 8%;
+  margin-left: 35%;
+  position: relative;
+  background: lightblue;
+  max-width: 360px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 30px 100px 20px rgba(230, 0, 0, 0.2);
+}
+#already {
+  margin: 8px;
+  font-size: 15px;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  background-color: DodgerBlue;
+  justify-content: center;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+}

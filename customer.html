@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer</title>
+    <h1>CUSTOMER ORDER PAGE</h1>
+    <link rel="stylesheet" href="styles2.css" />
+    <script src="login.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form action="customer.html" method="post">
+        <label for="stocks">Search Stock:</label>
+        <select name="stocks" id="stocks">
+          <option value="Select a Stock">Select a Stock</option>
+          <option value="DBS">DBS</option>
+          <option value="Nykaa">Nykaa</option>
+          <option value="Tata">Tata</option></select
+        ><br /><br />
+        <label for="orderType">Order Type</label>
+        <select name="orderType" id="orderType">
+          <option value="Select a Order">Select a Order</option>
+          <option value="Limit">Limit</option>
+          <option value="Market">Market</option></select
+        ><br /><br />
+        <input
+          type="number"
+          placeholder="Price"
+          id="price"
+          name="price"
+          min="1"
+          max="10000000"
+          required
+        /><br />
+        <input
+          type="number"
+          placeholder="quantity"
+          id="quantity"
+          name="quantity"
+          min="0"
+          required
+        />
+        <br /><br />
+        <input
+          type="submit"
+          value="PLACE ORDER"
+          onclick="validate()"
+          disabled
+        /><br />
+      </form>
+    </div>
+  </body>
+</html>
