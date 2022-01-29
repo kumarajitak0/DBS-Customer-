@@ -31,26 +31,11 @@
 }
 .red {background-color: #f44336;} 
 </style>
-<script>
-function numberValidation() {
-var n = document.form.price.value;
-var q = document.form.quan.value;
-if (isNaN(n) && isNaN(q) {
-document.getElementById("price").innerHTML="Please enter Numeric value";
-document.getElementById("quan").innerHTML="Please enter Numeric value";
-return false;
-}
-else
-{
-document.getElementById("numberText").innerHTML="Numeric value is: " + n;
-document.getElementById("numberText").innerHTML="Numeric value is: " + q;
-return true;
-}
-}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/script.js/2.0.2/script.min.js" integrity="sha512-UWtTDM6wtl/qutDD6i1JOGZGiEd92dveVzuLl8sMBkMHlOHcbZdexM7ZrKkeaugW7vhqDnWc2pPD/ohEV+BBbg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="check.js">
 </script>
 </head>
 <body>
-<form id="formTest" method="get" action="processData">
 <table class="center">
 <tr>
 <td>
@@ -81,16 +66,15 @@ return true;
 <tr>
 <td>
 <span class="label red">Quantity</span><br>
-<input type="text" id="quan" name="quan" length="5"><br><br>
+<input type="number" id="quan" name="quan" length="5"><br><br>
 </td>
 </tr>
 <tr>
 <td>
-<input type="submit" id="btnSubmit" value="Place Order" class="button"><br>
+<input type="submit" value="Place Order" onclick="validate()" class="button"><br>
 </td>
 </tr>
 </table>
-</form>
 </body>
 </html>
 
