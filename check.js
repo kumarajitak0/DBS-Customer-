@@ -7,11 +7,11 @@ var q=document.getElementById("quan").value
 
 
 if (!/^\d*\.?\d*$/.test(p)){
-console.log("Invalid Price");
+alert("Invalid Price");
 }
 
 if (p > 0){
-console.log("Invalid Quantity");
+alert("Invalid Quantity");
 }
 
 }
